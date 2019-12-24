@@ -1,0 +1,147 @@
+body{
+  display: grid;
+  background-color: grey;
+  margin: 0px;
+}
+.grid-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px 1fr 50px;
+  grid-template-areas: "header" "main" "footer";
+  margin: 0px;
+}
+.header { grid-area: header;
+  margin: 0px;
+}
+.grid-header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 40px;
+  grid-template-areas: "caja-logo caja-titulo" "nav nav";
+  margin: 0px;
+}
+.caja-logo { grid-area: caja-logo;
+  background: rgba(169,3,41,1);
+  border-bottom: 1px solid rgb(255,153,0);
+  padding: 5px;
+}
+.logo{
+  height: 100%;
+}
+.caja-titulo { grid-area: caja-titulo;
+  background: rgba(169,3,41,1);
+  color: rgb(204, 194,197);
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 70px;
+  align-items: center;
+  border-bottom: 1px solid rgb(255,153,0);
+  padding: 5px;
+  padding-left: 0px;
+
+}
+.nav { grid-area: nav;
+  background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
+  background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: -o-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: -ms-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: linear-gradient(to bottom, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0 );
+  border: 0px;
+  padding: 0px;
+}
+ul.barra-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+.barra-nav li{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.barra-nav li a {
+  color: rgb(204, 194,197);
+  font-family: 'Lato', sans-serif;
+  font-variant: small-caps;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover{
+  font-weight: bold;
+}
+
+
+.main { grid-area: main;
+
+}
+.grid-main {
+  display: grid;
+  background-image: url("https://i.ibb.co/7tqpJVV/Dosbicis-VL.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 100px;
+  grid-template-areas: "main-empezar main-cadencia main-consejos" "banner banner banner";
+  height: 100%;
+}
+h2{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-variant: small-caps;
+  font-size: 20px;
+  text-align: center;
+}
+p{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.main-empezar { grid-area: main-empezar;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 7%;
+  padding: 7%;
+
+}
+.main-cadencia { grid-area: main-cadencia;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 7%;
+  padding: 7%;
+}
+.main-consejos { grid-area: main-consejos;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 7%;
+  padding: 7%;
+}
+.main-consejos ul{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+.banner { grid-area: banner; }
+
+.footer { grid-area: footer;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foot-insta foot-face foot-blog";
+  height: 100%;
+}
+
+.foot-insta { grid-area: foot-insta; }
+
+.foot-face { grid-area: foot-face; }
+
+.foot-blog { grid-area: foot-blog; }
+
+.grid-footer div{
+  border: 2px solid green;
+}

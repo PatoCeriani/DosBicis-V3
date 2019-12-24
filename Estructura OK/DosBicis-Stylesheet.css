@@ -1,0 +1,67 @@
+body{
+  display: grid;
+  background-color: grey;
+  margin: 0px;
+}
+.grid-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 50px;
+  grid-template-areas: "header" "main" "footer";
+}
+.header { grid-area: header;
+}
+.grid-header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 40px;
+  grid-template-areas: "caja-logo caja-titulo" "nav nav";
+}
+.caja-logo { grid-area: caja-logo;
+}
+.caja-titulo { grid-area: caja-titulo;
+}
+.nav { grid-area: nav;
+}
+
+.main { grid-area: main;
+}
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 100px;
+  grid-template-areas: "main-nosotros main-consejos main-rutas" "banner banner banner";
+  height: 100%;
+}
+.main-nosotros { grid-area: main-nosotros; }
+.main-consejos { grid-area: main-consejos; }
+.main-rutas { grid-area: main-rutas; }
+.banner { grid-area: banner; }
+
+.footer { grid-area: footer;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foot-insta foot-face foot-blog";
+  height: 100%;
+}
+
+.foot-insta { grid-area: foot-insta; }
+
+.foot-face { grid-area: foot-face; }
+
+.foot-blog { grid-area: foot-blog; }
+.grid-principal div{
+  border: 2px solid orange;
+}
+.grid-header div{
+  border: 2px solid purple;
+}
+.grid-main div{
+    border: 2px solid blue;
+  }
+.grid-footer div{
+  border: 2px solid green;
+}
