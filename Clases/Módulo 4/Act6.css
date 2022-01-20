@@ -1,0 +1,15 @@
+.cuadro-video{
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: blueviolet;
+}
+.boton a{
+      color: cornsilk;
+      background-color: crimson;
+}
+.boton a:hover{
+    color: crimson;
+    background-color: cornsilk;
+}
